@@ -1,0 +1,25 @@
+#Python Program to Add Two Matrices
+
+try:
+
+    #take input from user
+    a = int(input("enter number of row\n"))
+    b = int(input("enter number of coloumn\n"))
+#initalize matrix
+    matrix  =[]
+    print("enter the numbers row wise \n ")
+#use for loop to take the matrix
+    for i in range(a):
+        c = []
+        for j in range(b):
+            c.append(int(input()))
+        matrix.append(c)
+#using for loop to print the matrix
+    for i in range(a):
+        for j in range(b):
+            print(matrix[i][j],end= '  ')
+        print()
+except Exception as e:
+    print(e)
+
+
