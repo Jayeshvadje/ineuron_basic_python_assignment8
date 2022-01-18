@@ -1,0 +1,22 @@
+
+#remove punctuation from string
+#make a function
+
+def punctuation(my_str):
+    """this function is used to remove punctuation"""
+    try:
+        a = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+        b = " "
+        for i in my_str:
+            if i not in a:
+                b=b+i
+        print(b,__doc__)
+    except Exception as e:
+        print(e)
+        
+#print string after removing punctuation
+my_str = str(input("enter the string with punctuation\n"))
+print("string after removing punctuation\n")
+punctuation(my_str)
+
+
